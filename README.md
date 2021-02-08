@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Password manager
+List all your passwords in one place with some features like no duplicate entries,Search for specific entry and updating existing passwords(currently in works!!).
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
