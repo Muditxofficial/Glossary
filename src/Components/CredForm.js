@@ -1,6 +1,20 @@
-import React from 'react'
+import React,{useState} from 'react'
+import {db} from '../firebase'
+const CredForm = () => {
 
-const CredForm = ({handleSubmit,iden,pass,setIden,setPass}) => {
+    const [iden,setIden] = useState('')
+    const [pass,setPass] = useState('')
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        db.collection('users').add({
+            name:iden,
+            password:pass
+        }).catch((error) => {
+            console.error("Error adding document: ", error);
+        });
+        setIden('')
+        setPass('')
+      }
     return (
         <div>
             <h3>Enter new Credentials:</h3>

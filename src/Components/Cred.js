@@ -1,13 +1,15 @@
 import React from 'react'
-
-const Cred = ({passToShow}) => {
+import useFirestore from '../hooks/useFirestore'
+const Cred = () => {
+    const {docs} = useFirestore('users')
+    console.log(docs)
     return (
         <div>
-              {passToShow.map((x,idx) => (
-                <div key={idx}>
-                    {x.name}:{x.password}
+            {docs && docs.map(doc => (
+                <div key={doc.id}>
+                    {doc.name}:{doc.password}
                 </div>
-                ))}
+            ))}
         </div>
     )
 }
