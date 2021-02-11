@@ -17,15 +17,15 @@ const CredForm = () => {
       }
     return (
         <div>
-            <h3>Enter new Credentials:</h3>
+            <h3>Enter new Word:</h3>
             <form onSubmit={handleSubmit}>
                 <div>
-                    Identifier:   
-                    <input value={iden} type="text" placeholder="enter Identifier" onChange={(e) => setIden(e.target.value)}/>
+                    Name:   
+                    <input value={iden} type="text" placeholder="Enter Name" onChange={(e) => setIden(e.target.value)}/>
                 </div>
                 <div>
-                    Password:
-                    <input value={pass} type="password" placeholder="enter Password" onChange={(e) => setPass(e.target.value)} required/>
+                    Meaning:
+                    <input value={pass} type="text" placeholder="Enter Meaning" onChange={(e) => setPass(e.target.value)} required/>
                 </div>
                 <button type="submit" >Submit</button>
             </form>

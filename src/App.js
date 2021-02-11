@@ -5,16 +5,13 @@ import CredForm from './Components/CredForm';
 import FilterCred from './Components/FilterCred';
 
 function App() {
-  /* const passToShow = term
-  ? add.filter((person) => person.name.toLowerCase().search(term.toLowerCase()) !== -1)
-  : add; */
   return (
     <div className="App">
-      <h2>Search for Password:-</h2>
-     {/* <FilterCred term={term} PassChanger={PassChanger}/> */}
+      <h2>Search for Words:-</h2>
+      <FilterCred/>
      <CredForm/>
-     <h1 style={{textAlign:'center'}}>
-       Password List
+     <h1>
+       Words List
      </h1>
      <Cred />
     </div>
