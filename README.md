@@ -1,4 +1,4 @@
-# Password manager
+# Dictionary aka GlossaryApp
 ![til](./src/dict.gif)
 List all your passwords in one place with some features like no duplicate entries,Search for specific entry and updating existing passwords(currently in works!!).
 
